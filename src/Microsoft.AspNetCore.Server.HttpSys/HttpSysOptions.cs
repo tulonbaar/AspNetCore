@@ -30,6 +30,10 @@ namespace Microsoft.AspNetCore.Server.HttpSys
         /// </summary>
         public bool EnableResponseCaching { get; set; } = true;
 
+        public RequestQueueMode Mode { get; set; }
+
+        public string RequestQueueName { get; set; }
+
         /// <summary>
         /// The url prefixes to register with Http.Sys. These may be modified at any time prior to disposing
         /// the listener.
