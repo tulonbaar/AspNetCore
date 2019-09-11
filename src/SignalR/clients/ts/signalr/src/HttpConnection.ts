@@ -319,7 +319,7 @@ export class HttpConnection implements IConnection {
             });
 
             if (response.statusCode !== 200) {
-                return Promise.reject(new Error(`Unexpected status code returned from negotiate ${response.statusCode}`));
+                return Promise.reject(new Error(`Unexpected status code returned from negotiate '${response.statusCode}'`));
             }
 
             return JSON.parse(response.content as string) as INegotiateResponse;
