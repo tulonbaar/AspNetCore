@@ -70,4 +70,9 @@ Later on, this will be checked using this condition:
       Microsoft.AspNetCore.SpaServices;
     </PackagesInPatch>
   </PropertyGroup>
+  <PropertyGroup Condition=" '$(VersionPrefix)' == '3.0.1' ">
+    <PackagesInPatch>
+      @microsoft/signalr;
+    </PackagesInPatch>
+  </PropertyGroup>
 </Project>
